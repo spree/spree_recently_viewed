@@ -1,8 +1,10 @@
 <% if get_recently_viewed_products.any? %>
-  <h6 class="product-section-title"><%= t(:recently_viewed_products) %></h6>
-  <ul id="recently_viewed_products">
-    <% get_recently_viewed_products.each do |p| %>
-      <li><%= link_to p.name, p %></li>
-    <% end -%>
-  </ul>
+  <nav id="recently_viewed_products" class="sidebar-item">
+    <h6 class="product-section-title"><%= t(:recently_viewed) %></h6>
+    <ul id="recently_viewed_products">
+      <% get_recently_viewed_products.each do |p| %>
+        <li><%= link_to p.name, p %></li>
+      <% end -%>
+    </ul>
+  </nav>
 <% end %>
