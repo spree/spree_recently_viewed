@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
 
   s.add_runtime_dependency 'spree_core', '>= 3.1.0', '< 4.0'
+  s.add_dependency 'deface', '~> 1.0'
 
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'factory_bot', '~> 4.7'
