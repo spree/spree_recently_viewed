@@ -28,6 +28,18 @@ This extension maintains and displays a list of the products a user has recently
 
 ---
 
+## Customization
+
+ Change max count of products vieweds
+
+ Add this line in `config/initializers/spree.rb`:
+  ```ruby
+  Spree::RecentlyViewed::Config.preferred_recently_viewed_products_max_count = 10
+  ```
+
+---
+
+
 ## Contributing
 
 See corresponding [guidelines][4]
