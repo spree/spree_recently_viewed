@@ -18,6 +18,8 @@ language: ruby
 
 rvm:
   - 2.5
+  - 2.6
+  - 2.7
 
 gemfile:
   - gemfiles/spree_3_5.gemfile
@@ -28,9 +30,6 @@ gemfile:
 matrix:
   allow_failures:
     - gemfile: gemfiles/spree_master.gemfile
-  exclude:
-    - rvm: 2.5.1
-      gemfile: gemfiles/spree_3_5.gemfile
 
 before_install:
   - mysql -u root -e "GRANT ALL ON *.* TO 'travis'@'%';"
