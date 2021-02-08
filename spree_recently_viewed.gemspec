@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'deface', '~> 1.0'
 
   s.add_development_dependency 'rspec-rails', '~> 4.0.0'
-  s.add_development_dependency 'factory_bot', '~> 4.7'
+  s.add_development_dependency 'factory_bot', '~> 6.1'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'capybara-screenshot'
   s.add_development_dependency 'selenium-webdriver'
