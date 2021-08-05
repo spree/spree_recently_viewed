@@ -25,4 +25,4 @@ module Spree::ProductsControllerDecorator
   end
 end
 
-Spree::ProductsController.prepend Spree::ProductsControllerDecorator
+Spree::ProductsController.prepend Spree::ProductsControllerDecorator if ::Spree::Core::Engine.frontend_available?
